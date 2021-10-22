@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+  margin: 0px;
+}
+
+.container {
+  font-family: monospace;
+  font-size: 18px;
+  color: #625750;
+}
+
+.content {
+  padding: 20px 30px;
+}
+
+.navbar-container {
+  width: -webkit-fill-available;
+  background: #625750;
+}
+
+.navbar {
+  font-size: 22px;
+  display: table-row;
+}
+
+.navbar-action {
+  padding: 30px 20px;
+  text-align: center;
+  display: table-cell;
+}
+
+.navbar-action a:-webkit-any-link {
+  color: #e0e2e4;
+  text-decoration: none;
+}
+
+.navbar-action a:hover {
+  color: #c6bcb6;
+}
+
+a:-webkit-any-link {
+  color: #96897f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #625750;
+}
+
+.post-container {
+  border: 1px solid #625750;
+  border-radius: 15px;
+  padding: 0px 1em 1em 1em;
+  margin: 10px;
+}
+
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+textarea, input[type=text], input[type=submit] {
+  width: -webkit-fill-available;
+  padding: 5px 10px;
+  margin: 10px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 3px solid #625750;
+  color: #625750;
+  font-size: 18px;
+  font-family: monospace;
+}
+
+input[type=submit] {
+  width:min-content;
+  margin: 0px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color: #96897f;
+  border-color: #96897f;
+}
+
+textarea:focus, input[type=text]:focus {
+  outline: none;
+}
+
+.form-group {
+  padding-right: 10px;
+}
+
+#error_explanation {
+  color: #FA8072;
+}

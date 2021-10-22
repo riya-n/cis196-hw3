@@ -1,0 +1,18 @@
+<h1>Blog - List of all Posts</h1>
+<div class="actions btn btn-primary">
+  <%= link_to "New", "/posts/new", method: :get %>
+</div>
+<div class="posts-container">
+  <% @posts.each do |post| %>
+    <div class="post-container">
+      <h3 style="margin-bottom: 10px;"><%= post.title %></h3>
+      <div style="margin-bottom: 20px;"><%= post.content %></div>
+      <div class="actions btn btn-primary">
+        <%= link_to "Read More", "/posts/#{post.id}", method: :get %>
+      </div>
+      <div class="actions btn btn-primary">
+        <%= link_to "Edit", "/posts/#{post.id}/edit", method: :get %>
+      </div>
+    </div>
+  <% end %>
+</div>

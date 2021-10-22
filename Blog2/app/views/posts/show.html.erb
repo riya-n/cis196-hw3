@@ -1,0 +1,8 @@
+<h1 style="margin-bottom: 10px;"><%= @post.title %></h1>
+<div style="margin-bottom: 20px;"><%= @post.content %></div>
+<div class="actions btn btn-primary">
+  <%= link_to "Back To All Posts", "/posts", method: :get %>
+</div>
+<div class="actions btn btn-primary">
+  <%= link_to "Edit", "/posts/#{@post.id}/edit", method: :get %>
+</div>

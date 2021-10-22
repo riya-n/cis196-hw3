@@ -1,0 +1,8 @@
+<h1>Edit Post #<%= @post.id %></h1>
+<%= render 'form', post: @post %>
+<div class="actions btn btn-primary">
+  <%= link_to "Back", "/posts/#{@post.id}", method: :get %>
+</div>
+<div class="actions btn btn-primary">
+  <%= link_to "Delete", "/posts/#{@post.id}", method: :delete %>
+</div>
